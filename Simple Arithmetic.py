@@ -32,8 +32,26 @@ print("Divide : ", Divide)
 # -------------------------------------------
 # The power() function rises the values from the first array to the power of the values of the second array
 power = np.power(arr1, arr2)
-print(power)
+print("Power : ", power)
 
 # Remainder
 # -------------------------------------------------
 # Both the mod() and the remainder() functions return the remainder of the values in the first array corresponding to the values in the second array
+mod = np.mod(arr1, arr2)
+remainder = np.remainder(arr1, arr2)
+print("Reminder : ", remainder)
+print("Msdulus : ", mod)
+
+# Quotient and Mod or Remainder
+# -------------------------------------------------
+# The divmod() function return both the quotient and the the mod.
+Quotientmod = np.divmod(arr1, arr2)
+# First one will be Quotient and the other one will be reminder
+print("Quotient and Remoinder : ", Quotientmod)
+
+# Absolute Values
+# -------------------------------------------------
+# using real number array
+realarray = [-1, -2, 1, 2, 3, -4]
+Absolutearray = np.absolute(realarray)
+print("Absolute array : ", Absolutearray)
